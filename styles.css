@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-style: 15px;
+  font-family: "League Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto 80px auto;
+}
+
+.desc {
+  position: relative;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_sub {
+  flex-basis: 50%;
+}
+
+.title_sub h1.title {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.title_sub p.subtitle {
+  color: var(--dark-grayish-magenta);
+  line-height: 2;
+  width: 80%;
+}
+.reviews {
+  margin-top: 30px;
+}
+.rating {
+  background-color: var(--light-grayish-magenta);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.rating1 {
+  right: 90px;
+}
+.rating2 {
+  right: 50px;
+}
+.rating3 {
+  right: 0;
+}
+
+.rating p {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  margin-left: 20px;
+}
+.comments {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 150px;
+  color: var(--white);
+}
+.box_info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.box {
+  margin-right: 50px;
+  width: 350px;
+  background-color: var(--very-dark-magenta);
+  padding: 40px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.info h2,
+.info p {
+  font-size: 17px;
+}
+
+.info p {
+  color: var(--soft-pink);
+}
+
+.box1 {
+  top: 0px;
+}
+.box2 {
+  top: 30px;
+}
+.box3 {
+  top: 60px;
+}
+.img img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.box_content {
+  margin-top: 10px;
+}
+
+.box_content p {
+  font-size: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url(./images/bg-pattern-top-mobile.svg);
+  }
+
+  .desc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title_sub h1.title {
+    text-align: center;
+    font-size: 25px;
+    width: auto;
+  }
+
+  .title_sub p.subtitle {
+    text-align: center;
+    line-height: 1.5;
+    width: auto;
+    margin: 30px 0;
+  }
+
+  .rating {
+    position: relative;
+    flex-direction: column;
+    right: 0;
+  }
+
+  .rating_img {
+    margin-bottom: 10px;
+  }
+
+  .comments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
